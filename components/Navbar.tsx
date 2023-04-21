@@ -31,8 +31,10 @@ const Navbar = () => {
           <li>Experience</li>
           <li>Projects</li>
           <li>Portfolio</li>
+         
         </ul>
       </nav>
+      <button className={styles.ContactMe}>Contact Me</button>
     </header>
   )
 }

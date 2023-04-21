@@ -3,78 +3,154 @@
 Navbar
 ===============
 */
-.header{
-    position: relative;
-   
+.header {
+  position: relative;
 }
-.navCenter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1rem;
+.navCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
 }
-.menuBar{
-    font-size: 3rem;
-    cursor:pointer;
+.menuBar {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.menuBar:hover {
+  transform: scale(1.5);
 }
 
-.nav{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    height: 400px;
-    background: var(--primary-700);
-  
-    position: absolute;
-    right: 0px;
-    top:0px;
-    padding-left:2.5rem;
-    border-bottom-left-radius: 1rem;
-    animation: navbar 0.5s ease-in ;
+.nav {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 400px;
+  background: var(--primary-700);
 
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-left: 2.5rem;
+  border-bottom-left-radius: 1rem;
+  animation: navbar 0.5s linear 0s forwards;
 }
-.hideLinks{
+.hideLinks {
+  display: none;
+}
+
+.dropdownMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -1rem;
+  padding-right: 0.25rem;
+}
+
+.dropdownMenu .menuBar {
+  font-weight: 700;
+  line-height: 1.3;
+}
+.dropdownMenu h2 {
+  margin-bottom: 0px;
+}
+.menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+.menuList li {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.menuList li:hover{
+    transform: scaleX(1.25);
+}
+.ContactMe{
+    background: var(--yellow-700);
+    color: var(--grey-500);
+    padding: 0.4em 0.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+    border:none;
+    border-radius: 15px;
     display: none;
-}
-
-.dropdownMenu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: -1rem;
-    padding-right:0.25rem;
-    
-
-}
-.dropdownMenu .menuBar{
-   
-    font-weight: 700;
-    line-height: 1.3;
-}
-.dropdownMenu h2{
-    margin-bottom: 0px;
-}
-.menuList{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap:1em;
-}
-.menuList li{
-    font-size: 2rem;
     cursor: pointer;
+    transition: 0.3s linear;
+
+}
+.ContactMe:hover{
+    background-color: var(--textColor);
+    color:black
 }
 @keyframes navbar {
-    0%{
-        opacity: 0;
-        transform: translateX(500px);
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
+
+@media screen and (min-width: 800px) {
+  .dropdownMenu {
+    display: none;
+  }
+  .nav {
+    position: static;
+    background: var(--primary-600);
+    height: 0px;
+  }
+  .menuBar {
+    display: none;
+  }
+  .menuList {
+    flex-direction: row;
+    gap: 2em;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3em;
+  }
+  .hideLinks {
+    display: block;
+  }
+  .menuList li:hover{
+    transform: none;
+    color: var(--purple-500);
+}
+}
+
+@media screen and (min-width: 1100px) {
+  
+  .menuList li {
+    margin-right: 2em;
+  }
+  .ContactMe{
+    display: block;
+    
+  }
+}
+
+
+
+/*
+=============== 
+Hero
+===============
+*/
+.name{
+    font-size: 5rem;
+}
+
+

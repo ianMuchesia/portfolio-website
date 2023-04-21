@@ -74,7 +74,7 @@ html{
 
 
   --backgroundColor: var(--primary-600);
-  --textColor: var(--grey-600);
+  --textColor:#fff;
   --borderRadius: 0.5rem;
   --letterSpacing: 1px;
 
@@ -121,7 +121,7 @@ h3,
 h4,
 h5 {
   margin: 0;
-  margin-bottom: 1.75rem;
+
   font-family: var(--headingFont);
   font-weight: 700;
 line-height: 1.3;
@@ -141,6 +141,7 @@ h2 {
 
 h3 {
   font-size: 1.953rem;
+  color:var(--green-700)
 }
 
 h4 {
