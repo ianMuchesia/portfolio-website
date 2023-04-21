@@ -124,7 +124,7 @@ h5 {
   margin-bottom: 1.75rem;
   font-family: var(--headingFont);
   font-weight: 700;
-  line-height: 1.3;
+line-height: 1.3;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
