@@ -141,7 +141,7 @@ h2 {
 
 h3 {
   font-size: 1.953rem;
-  color:var(--green-700)
+  color:var(--green-500)
 }
 
 h4 {
@@ -162,6 +162,23 @@ ul {
   object-fit: cover;
 }
 
+button{
+  background: var(--yellow-500);
+  color: var(--grey-900);
+  padding: 0.4em 1em;
+  font-size: 1.5em;
+  font-weight: 500;
+  border:none;
+  border-radius: 15px;
+
+  cursor: pointer;
+  transition: 0.3s linear;
+
+}
+button:hover{
+  background-color: var(--textColor);
+  color:black
+}
 
 @media (prefers-color-scheme: dark) {
   html {

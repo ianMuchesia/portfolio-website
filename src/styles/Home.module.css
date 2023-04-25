@@ -71,17 +71,9 @@ Navbar
 .menuList li:hover{
     transform: scaleX(1.25);
 }
-.ContactMe{
-    background: var(--yellow-700);
-    color: var(--grey-500);
-    padding: 0.4em 0.5em;
-    font-size: 1.5em;
-    font-weight: 500;
-    border:none;
-    border-radius: 15px;
-    display: none;
-    cursor: pointer;
-    transition: 0.3s linear;
+.header button{
+   display: none;
+    
 
 }
 .ContactMe:hover{
@@ -137,7 +129,7 @@ Navbar
   .menuList li {
     margin-right: 2em;
   }
-  .ContactMe{
+  .header .ContactMe{
     display: block;
     
   }
@@ -150,9 +142,27 @@ Navbar
 Hero
 ===============
 */
-/* .name{
-    font-size: 5rem;
-    margin: ;
-}
- */
 
+.heroSection{
+  padding:0em 2em;
+}
+
+.heroWords h3{
+  font-weight: 600;
+}
+.heroWords h1{
+  font-size: 4.3rem;
+}
+.heroWords p{
+  font-size: 1.45rem;
+}
+.heroPictureSection{
+  position: relative;
+}
+
+
+
+.portfolioImage{
+height: auto;
+max-width: 100%;
+}
