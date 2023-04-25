@@ -73,7 +73,7 @@ html{
   --bodyFont: 'Poppins', sans-serif;
 
 
-  --backgroundColor: var(--primary-600);
+  --backgroundColor: var( --primary-600);
   --textColor:#fff;
   --borderRadius: 0.5rem;
   --letterSpacing: 1px;
