@@ -68,17 +68,15 @@ Navbar
   cursor: pointer;
   transition: 0.3s linear;
 }
-.menuList li:hover{
-    transform: scaleX(1.25);
+.menuList li:hover {
+  transform: scaleX(1.25);
 }
-.header button{
-   display: none;
-    
-
+.header button {
+  display: none;
 }
-.ContactMe:hover{
-    background-color: var(--textColor);
-    color:black
+.ContactMe:hover {
+  background-color: var(--textColor);
+  color: black;
 }
 @keyframes navbar {
   0% {
@@ -122,24 +120,20 @@ Navbar
   .hideLinks {
     display: block;
   }
-  .menuList li:hover{
+  .menuList li:hover {
     transform: none;
     color: var(--purple-500);
-}
+  }
 }
 
 @media screen and (min-width: 1100px) {
-  
   .menuList li {
     margin-right: 2em;
   }
-  .header .ContactMe{
+  .header .ContactMe {
     display: block;
-    
   }
 }
-
-
 
 /*
 =============== 
@@ -147,80 +141,74 @@ Hero
 ===============
 */
 
-.heroSection{
-  padding:0em 2em;
+.heroSection {
+  padding: 0em 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.heroWords{
+.heroWords {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.heroWords h3{
+.heroWords h3 {
   font-weight: 600;
 }
-.heroWords h1{
+.heroWords h1 {
   font-size: 4.3rem;
 }
-.heroWords p{
+.heroWords p {
   font-size: 1.45rem;
 }
 
-
-
-.portfolioImage{
-height: auto;
-max-width: 100%;
+.portfolioImage {
+  height: auto;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 700px) {
-  .heroWords{
+  .heroWords {
     align-items: flex-start;
   }
-  .heroSection{
+  .heroSection {
     flex-direction: row;
     align-items: center;
     padding: 4em 2em;
   }
 }
 @media screen and (min-width: 800px) {
-  .heroSection{
+  .heroSection {
     justify-content: space-around;
   }
-  .hello{
+  .hello {
     max-width: 60%;
   }
-  .name{
+  .name {
     font-size: 6rem;
   }
-  .heroPictureSection{
-  align-self: center;
-  justify-self: center;
- }
-
-
-  
+  .heroPictureSection {
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  .heroWords{
-   gap:1.5em;
+  .heroWords {
+    gap: 1.5em;
   }
-  .name{
+  .name {
     font-size: 7rem;
   }
-  .portfolioImage{
+  .portfolioImage {
     height: 100%;
     max-width: 100%;
-    }
-    .heroWords p{
-      font-size: 2rem;
-    }
-
+  }
+  .heroWords p {
+    font-size: 2rem;
+  }
 }
 
 /*
@@ -229,7 +217,7 @@ Skills
 ===============
 */
 
-.skills_section{
+.skills_section {
   background: var(--primary-500);
   padding: 4em 2em;
   display: flex;
@@ -237,57 +225,56 @@ Skills
   align-items: center;
   justify-content: center;
 }
-.skills_title{
+.skills_title {
   text-align: center;
 }
-.skills_title span{
+.skills_title span {
   color: var(--purple-500);
 }
-.skills_section >p{
-  margin-bottom:0rem;
+.skills_section > p {
+  margin-bottom: 0rem;
   font-size: 1.3rem;
   text-align: center;
 }
-.skills_container{
+.skills_container {
   margin: 2em 0em;
   display: grid;
   place-items: center;
-  gap:2em;
+  gap: 2em;
 }
 .skills_container_card {
-  
   background: var(--backgroundColor);
   padding: 1.5em;
   cursor: pointer;
- max-width: 100%;
- transition: 0.5s linear;
- border-radius:15px;
-
+  max-width: 100%;
+  transition: 0.5s linear;
+  border-radius: 15px;
 }
-.skills_container_card:hover{
+.skills_container_card:hover {
   background: var(--primary-700);
 
- 
   animation-name: bounce-twice;
   animation-duration: 1s;
   animation-iteration-count: 2; /* Number of bounces */
   animation-fill-mode: both;
 }
-.skills_container_card p{
+.skills_container_card p {
   font-size: 1rem;
-
 }
-.skills_container_card_image{
+.skills_container_card_image {
   height: 40%;
   max-width: 100%;
 }
 
 @keyframes bounce-twice {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0); /* Start and end position */
   }
   40% {
-   
     transform: translateY(-20px); /* First bounce */
   }
   60% {
@@ -295,51 +282,45 @@ Skills
   }
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width: 400px) {
   .skills_container_card {
- 
-  
- max-width: 90%;
+    max-width: 90%;
+  }
+  .skills_container_card p {
+    font-size: 1.3rem;
+  }
 }
-.skills_container_card p{
-  font-size: 1.3rem;
-}
-}
-@media screen and (min-width:600px) {
-  .skills_container{
+@media screen and (min-width: 600px) {
+  .skills_container {
     grid-template-columns: 1fr 1fr;
   }
   .skills_container_card {
     height: 25em;
-  
+
     max-width: 100%;
-   }
+  }
 }
 
-@media screen and (min-width:900px) {
-  .skills_container{
+@media screen and (min-width: 900px) {
+  .skills_container {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .skills_container_card {
     height: 25em;
-  
+
     max-width: 100%;
-   }
- 
+  }
 }
 
-@media screen and (min-width:1100px) {
- 
-  .skills_container{
+@media screen and (min-width: 1100px) {
+  .skills_container {
     margin: 2em 3em;
-    gap:2.5em;
-   
+    gap: 2.5em;
   }
   .skills_container_card {
-    width:20em;
+    width: 20em;
   }
 }
-
 
 /*
 =============== 
@@ -347,36 +328,46 @@ Portfolio
 ===============
 */
 
-.portfolio{
+.portfolio {
   padding: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.experience_section h3{
+.experience_section h3 {
   text-align: center;
 }
-.tech_card{
+.experience_technologies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.tech_card {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap:1em;
+  gap: 1em;
 }
-.tech_card_image_container{
-  height: 200px;
-  width: 200px;
+.tech_card_image_container {
+  height: 100px;
+  width: 100px;
   border: 1px solid var(--green-500);
   border-radius: 50%;
   transition: 0.5s linear;
 }
-.tech_card_image_container:hover{
+.tech_card_image_container:hover {
   background: var(--green-800);
   border: none;
 }
-.tech_card_image{
+.tech_card_image {
   height: auto;
   max-width: 90%;
   object-fit: contain;
+}
+@media screen and (min-width: 500px) {
+  .experience_technologies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
