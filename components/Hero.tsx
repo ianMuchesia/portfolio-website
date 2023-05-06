@@ -7,7 +7,7 @@ const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroWords}>
         <h3>Introducing</h3>
-        <h1 className={styles.hello}>Hello  I'm </h1><h1 className={styles.name}>Ian Muchesia</h1>
+        <h1 className={styles.hello}>Hello <br/> <span className={styles.name}>I'm Ian Muchesia</span> </h1>
         <p>
           A passionate full-stack developer with a focus on creating functional
           and visually appealing web and mobile applications. With 18 months of
@@ -23,8 +23,8 @@ const Hero = () => {
         </div>
         <Image
         src='/portfolio.png'
-        width={300}
-        height={300}
+        width={500}
+        height={500}
         className={styles.portfolioImage}
         alt="portfolio pic"/>
       </div>

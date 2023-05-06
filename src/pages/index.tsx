@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Hero from '../../components/Hero'
+import Skills from '../../components/Skills'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <main>
        <Hero/>
+       <Skills/>
       </main>
      
     </>
