@@ -27,10 +27,12 @@ const Navbar = () => {
       
         <ul className={styles.menuList}>
           <li>About</li>
-          <li>Portfolio</li>
+          
           <li>Experience</li>
-          <li>Projects</li>
+         
           <li>Portfolio</li>
+          <li>Testimonial</li>
+          <li>Contact</li>
          
         </ul>
       </nav>

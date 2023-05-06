@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Hero from '../../components/Hero'
 import Skills from '../../components/Skills'
+import Portfolio from '../../components/Portfolio'
+import Experience from '../../components/Experience'
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       <main>
        <Hero/>
        <Skills/>
+       <Experience/>
+       <Portfolio/>
       </main>
      
     </>

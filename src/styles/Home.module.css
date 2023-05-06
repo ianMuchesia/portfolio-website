@@ -184,7 +184,7 @@ max-width: 100%;
   .heroSection{
     flex-direction: row;
     align-items: center;
-    padding: 4em 0em;
+    padding: 4em 2em;
   }
 }
 @media screen and (min-width: 800px) {
@@ -255,7 +255,8 @@ Skills
   gap:2em;
 }
 .skills_container_card {
-  border: 1px solid var(--backgroundColor);
+  
+  background: var(--backgroundColor);
   padding: 1.5em;
   cursor: pointer;
  max-width: 100%;
@@ -264,8 +265,9 @@ Skills
 
 }
 .skills_container_card:hover{
-  
-  background: var(--backgroundColor);
+  background: var(--primary-700);
+
+ 
   animation-name: bounce-twice;
   animation-duration: 1s;
   animation-iteration-count: 2; /* Number of bounces */
@@ -336,4 +338,45 @@ Skills
   .skills_container_card {
     width:20em;
   }
+}
+
+
+/*
+=============== 
+Portfolio
+===============
+*/
+
+.portfolio{
+  padding: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.experience_section h3{
+  text-align: center;
+}
+.tech_card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap:1em;
+}
+.tech_card_image_container{
+  height: 200px;
+  width: 200px;
+  border: 1px solid var(--green-500);
+  border-radius: 50%;
+  transition: 0.5s linear;
+}
+.tech_card_image_container:hover{
+  background: var(--green-800);
+  border: none;
+}
+.tech_card_image{
+  height: auto;
+  max-width: 90%;
+  object-fit: contain;
 }
