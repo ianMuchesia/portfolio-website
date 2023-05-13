@@ -1,8 +1,13 @@
 import React from 'react'
+import { AiFillFacebook, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div><div className="">
+      <AiOutlineTwitter/>
+      <AiFillFacebook/>
+      <AiFillLinkedin/></div>
+      <h4>{new Date().getFullYear()}</h4></div>
   )
 }
 

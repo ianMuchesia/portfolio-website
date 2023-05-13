@@ -8,11 +8,13 @@ const Contact = () => {
         <h3>Chat With Me </h3>
         <div className={styles.contact_container}>
         <div className={styles.contact_details}>
-        <div className={styles.contact_email}>
-            
+        <div className={styles.contact__}>
+<h5>ianmuchesia@yahoo.com</h5>
+<Image  src='/email.png' height={100} width={100} alt='email' className={styles.contact__img}/>
             </div>
-            <div className={styles.contact_phone}>
-            
+            <div className={styles.contact__}>
+            <h5>+254 797 159 837</h5>
+<Image  src='/call.png' height={100} width={100} alt='email' className={styles.contact__img}/>
             </div>
         </div>
 
