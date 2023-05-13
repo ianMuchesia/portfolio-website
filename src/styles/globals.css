@@ -180,6 +180,9 @@ button:hover{
   background-color: var(--textColor);
   color:black
 }
+textarea:focus,input:focus{
+  outline: none;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
