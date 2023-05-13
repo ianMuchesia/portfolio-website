@@ -5,6 +5,7 @@ import Hero from '../../components/Hero'
 import Skills from '../../components/Skills'
 import Portfolio from '../../components/Portfolio'
 import Experience from '../../components/Experience'
+import Testimonial from '../../components/Testimonial'
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
        <Skills/>
        <Experience/>
        <Portfolio/>
+       <Testimonial/>
       </main>
      
     </>

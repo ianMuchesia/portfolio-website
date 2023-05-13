@@ -25,7 +25,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <section className={styles.skills_section}>
-      <h3>Skills</h3>
+      
       <h1 className={styles.skills_title}>My <span>Approach</span>  to Delivering <span>Outstanding Results</span></h1>
       <p>
         I am committed to delivering projects that exceed expectations and

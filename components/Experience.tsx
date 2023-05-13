@@ -4,39 +4,39 @@ import Image from "next/image";
 
 const experienceData = [
   {
-    image: "html.png",
+    image: "HTML.png",
     title: "HTML",
   },
   {
-    image: "css.png",
-    title: "css",
+     image: "CSS.png",
+    title: "CSS",
   },
   {
-    image: "javascript.png",
+    image: "JAVASCRIPT.png",
     title: "javascript",
   },
   {
-    image: "react.png",
+    image: "REACT.png",
     title: "react",
   },
   {
-    image: "tailwind.png",
+    image: "TAILWIND.png",
     title: "tailwind",
   },
   {
-    image: "typescript.png",
+    image: "TYPESCRIPT.png",
     title: "typescript",
   },
   {
-    image: "postgreSQL.png",
+    image: "POSTGRESQL.png",
     title: "postgreSQL",
   },
   {
-    image: "nodejs.png",
+    image: "NODE.png",
     title: "node .js",
   },
   {
-    image: "mongoDB.png",
+    image: "MONGODB.png",
     title: "mongoDB",
   },
 ];
